@@ -41,14 +41,25 @@
             font-weight: bold;
             color: #74A57F;
         }
+        .profile-image-container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
         .profile-image {
-            display: block;
-            margin: 1rem auto;
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+        }
+        .profile-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.6);
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            font-size: 1.5rem;
         }
     </style>
 </head>
@@ -59,12 +70,15 @@
 
     <section id="about-me">
         <h2>About Me</h2>
-        <img src="self.png" alt="A photo of me" class="profile-image">
+        <div class="profile-image-container">
+            <img src="self.png" alt="A photo of me" class="profile-image">
+            <div class="profile-text">Hi, I’m [Your Name]!</div>
+        </div>
         <p>[Add your points here later]</p>
     </section>
 
-    <section id="media-tiers">
-        <h2>Media I Consume and Produce</h2>
+    <section id="media-consume">
+        <h2>Media I Consume</h2>
         <ul>
             <li class="tier">Tier 1: Favorite Media</li>
             <ul>
@@ -80,6 +94,22 @@
             <ul>
                 <li>[Media Name/Type]</li>
                 <li>[Media Name/Type]</li>
+            </ul>
+        </ul>
+    </section>
+
+    <section id="media-produce">
+        <h2>Media I Produce</h2>
+        <ul>
+            <li class="tier">Primary Content</li>
+            <ul>
+                <li>[Content Type]</li>
+                <li>[Content Type]</li>
+            </ul>
+            <li class="tier">Secondary Content</li>
+            <ul>
+                <li>[Content Type]</li>
+                <li>[Content Type]</li>
             </ul>
         </ul>
     </section>
