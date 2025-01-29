@@ -2372,15 +2372,10 @@ blockquote {
     display: none;
     padding: 0 20px 20px;
     border-top: 1px solid #e1e1e1;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
 }
 
 .dropdown-box.active .dropdown-content {
     display: block;
-    max-height: 500px; /* Adjust this value based on your content height */
-    padding: 20px;
 }
 
 .dropdown-content ul {
